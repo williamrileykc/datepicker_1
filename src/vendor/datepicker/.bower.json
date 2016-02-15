@@ -1,0 +1,14 @@
+{
+  "name": "datepicker",
+  "homepage": "https://github.com/kbwood/datepick",
+  "version": "5.0.1",
+  "_release": "5.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "5.0.1",
+    "commit": "a5fd2669b3160b5ebe291a857c72019bb0b682b2"
+  },
+  "_source": "https://github.com/kbwood/datepick.git",
+  "_target": "~5.0.0",
+  "_originalSource": "https://github.com/kbwood/datepick.git"
+}

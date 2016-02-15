@@ -1,0 +1,357 @@
+$calendars-bg: $white;
+$calendars-dayrow--bg: $calendars-bg;
+$calendars-dayrow--color: $gray-dark;
+$calendars-active--color: $white;
+$calendars-active--bg: $brand-primary;
+$calendars-inactive--color: $gray-dark;
+$calendars-inactive--bg: $white;
+$calendars-disabled--color: $gray-light;
+$calendars-disabled--bg: $gray-lighter;
+
+$calendars-month--border: 0px;
+
+$calendars--font-size: 90%;
+$calendars--outer-padding: 10px;
+$calendars-header--height-xs: 40px;
+$calendars-cell--padding: 3px 6px;
+$calendars-cell--width: 40px;
+$calendars-cell--height: 24px;
+$calendars-nav--width: 40px;
+$calendars-nav--height: 40px;
+$calendars-cmd--height: 20px;
+$calendars-key-cell--width: 16px;
+$calendars-key-cell--height: $calendars-key-cell--width;
+
+$calendars-font: Arial,Helvetica,Sans-serif;
+
+//Z-Index Management -- utilizes Sass Maps
+$calendars-zindex: (
+	aboveground		:	50,
+	header-nav		:	15,
+	header-text		:	10,
+	ground			:	1,
+	zero			:	0,
+	underground		:	-1,
+	hell			:	-9000
+);
+
+/* Default styling for jQuery Calendars Picker v2.0.0. */
+.calendars {
+	font-family: $calendars-font;
+}
+.datepick-rtl {
+	direction: rtl;
+}
+.datepick-popup {
+	z-index: 1000;
+	-webkit-box-shadow: 1px 1px 4px 0 rgba(150,150,150,0.6);
+	box-shadow: 1px 1px 4px 0 rgba(150,150,150,0.6);
+}
+.datepick-disable {
+	position: absolute;
+	z-index: 100;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+.calendars a {
+	text-decoration: none;
+}
+.calendars a.datepick-disabled {
+	cursor: auto;
+}
+.calendars button {
+    margin: 0.25em;
+    padding: 0.125em 0em;
+    font-weight: bold;
+}
+.datepick-nav, 
+.datepick-ctrl {
+	width: 100%;
+	font-size: 90%;
+	font-weight: bold;
+}
+.datepick-ctrl {
+	float: left;
+}
+.datepick-cmd.datepick-disabled { 
+	opacity:0.5; 
+	filter:alpha(opacity=50); /* For IE8 and earlier */ 
+}
+button.datepick-cmd {
+	text-align: center;
+}
+.datepick-cmd-prev, .datepick-cmd-prevJump, .datepick-cmd-clear {
+	float: left;
+	padding-left: 2%;
+}
+.datepick-cmd-current, .datepick-cmd-today {
+	float: left;
+	text-align: center;
+}
+.datepick-cmd-next, .datepick-cmd-nextJump, .datepick-cmd-close {
+	float: right;
+	text-align: right;
+}
+.datepick-rtl .datepick-cmd-prev, .datepick-rtl .datepick-cmd-prevJump,
+.datepick-rtl .datepick-cmd-clear {
+	float: right;
+	text-align: right;
+}
+.datepick-rtl .datepick-cmd-current, .datepick-rtl .datepick-cmd-today {
+	float: right;
+}
+.datepick-rtl .datepick-cmd-next, .datepick-rtl .datepick-cmd-nextJump,
+.datepick-rtl .datepick-cmd-close {
+	float: left;
+	text-align: left;
+}
+.datepick-month-nav {
+	float: left;
+	text-align: center;
+}
+.datepick-month-nav div {
+	float: left;
+	width: 12.5%;
+	margin: 1%;
+	padding: 1%;
+}
+.datepick-month-nav span {
+}
+.datepick-month-row {
+	clear: left;
+}
+.datepick-month {
+	border: $calendars-month--border;
+	float: left;
+	padding: $calendars--outer-padding;
+	width: auto;
+	text-align: center;
+}
+.datepick-month-header, 
+.datepick-month-header select, 
+.datepick-month-header input {
+	color: $calendars-active--color;
+	height: 1.5em;
+	font-weight: bold;
+	line-height: 1;
+}
+.datepick-month-header select, 
+.datepick-month-header input {
+	height: 1.4em;
+}
+.datepick-month-header input {
+	position: absolute;
+	display: none;
+}
+.datepick-month-header select option {
+	background-color: $calendars-bg;
+	color: $calendars-inactive--color;
+}
+.datepick-month table {
+	width: 100%;
+	margin: 0;
+	border-collapse: collapse;
+	border: 0px;
+}
+.datepick-month thead {
+}
+.datepick-month tr {
+	border: 0px;
+}
+.datepick-month th, 
+.datepick-month td {
+	margin: 0em;
+	padding: $calendars-cell--padding;
+	font-weight: normal;
+	text-align: center;
+}
+.datepick-month th {
+	background-color: $calendars-dayrow--bg;
+	color: $calendars-dayrow--color;
+}
+.datepick-month th, .datepick-month th a {
+}
+.datepick-month td {
+	background-color: $calendars-bg;
+	width: $calendars-cell--width;
+	height: $calendars-cell--height;
+	line-height: $calendars-cell--height;
+}
+.datepick-month td.datepick-week {
+}
+.datepick-month td.datepick-week * {
+}
+.datepick-month a {
+	font-size:.875em; 
+	display: block;
+	width: 100%;
+	text-decoration: none;
+}
+.datepick-month span {
+	font-size:.875em; 
+	display: block;
+	width: 100%;
+}
+.datepick-month td span {
+}
+.datepick-month td .datepick-other-month {
+}
+.datepick-month td .datepick-weekend {
+}
+.datepick-month td .datepick-today {
+}
+.datepick-month td .datepick-highlight {
+}
+.datepick-month td .datepick-selected {
+}
+.datepick-month th.datepick-week {
+}
+.datepick-status {
+	clear: both;
+	text-align: center;
+}
+.datepick-clear-fix {
+	clear: both;
+}
+
+
+/* DATE PICKER OVERRIDE */
+.datepick-popup { 
+	padding: 0; 
+	background-color: $calendars-bg;
+	z-index: 2005;}
+.calendars { 
+	background-color: $calendars-bg;
+	font-size: 1em;
+	margin: 0 auto;
+	
+} 
+.datepick-month td a { 
+	border: 1px solid $calendars-disabled--color;
+	color: $calendars-inactive--color; 
+	background-color: $calendars-inactive--bg; 
+}
+.datepick-month td span { 
+	border: 1px solid $calendars-disabled--color;
+	color: $calendars-disabled--color; 
+	background-color: $calendars-disabled--bg; 
+}
+.datepick-month td, 
+.datepick-month th { 
+	padding: 5px; 
+	border: 0px;
+}
+.datepick-ctrl, 
+a.datepick-cmd-today { 
+	display: none; 
+}
+
+
+.datepick-nav {
+	background-color: transparent;
+	position: absolute;
+	top: $calendars--outer-padding;
+	left: 0;
+}
+.datepick-cmd { 
+	display: block;
+	color: $calendars-active--color;
+	height: $calendars-cmd--height;
+	padding-top:0; 
+	margin-top: 10px;
+	position: relative;
+	text-indent: -9999px; 
+	width: 40px; 
+	z-index: map-get($calendars-zindex, header-nav);
+	&:after {
+		position: absolute;
+		display: block;
+		top: 0;
+		text-indent: 0;
+		width: $calendars-nav--width;
+		height: $calendars-nav--height;
+	}
+	&:hover {
+		color: $calendars-active--color;
+	}
+}
+a.datepick-cmd-prev,
+a.datepick-cmd-next {
+	height: $calendars-header--height-xs;
+	padding: 0;
+	position: absolute;
+	margin-top: 0;
+	width: $calendars-header--height-xs;
+}
+a.datepick-cmd-prev { 
+	left: $calendars--outer-padding;
+	&:after {
+		@include font-size(16px);
+	}
+}
+a.datepick-cmd-next { 
+	right: $calendars--outer-padding;
+	&:after {
+		@include font-size(16px);
+	}
+}	
+
+
+.datepick-month-header { 
+	font-size: 1em; 
+	background-color: $calendars-active--bg;
+	height: $calendars-header--height-xs;
+	line-height: $calendars-header--height-xs;
+	z-index: map-get($calendars-zindex, header-text);
+	position: relative; 
+}
+.datepick-month td span.datepick-other-month {
+	background-color: transparent;
+}
+.datepick-month td a.datepick-highlight, 
+.datepick-month td a.datepick-today,  
+.datepick-month td a.datepick-weekend, 
+.datepick-month td a.datepick-today { 
+	background-color: $calendars-inactive--bg; 
+	color: $calendars-inactive--color;
+}
+.datepick-month td a.datepick-selected,
+.datepick-month td a.datepick-selected:hover,
+.datepick-month td a.datepick-selected.today,
+.datepick-month td a.datepick-selected.today:hover { 
+	color: $calendars-active--color;
+	background-color: $calendars-active--bg;
+}
+.datepick-key {
+	@include clearfix();
+	padding: 10px 5px 0 5px;
+}
+.datepick-key--available,
+.datepick-key--unavailable {
+	font-size: .75em;
+	line-height: $calendars-key-cell--height;
+	display: inline-block;
+	text-transform: uppercase;
+	&:before {
+		content: "";
+		display: inline-block;
+		float: left;
+		margin-right: 8px;
+		width: $calendars-key-cell--width;
+		height: $calendars-key-cell--height;
+		line-height: $calendars-key-cell--height;
+		border: 1px solid $calendars-disabled--color;
+	}
+}
+.datepick-key--available {
+	float: left;
+	&:before {
+		background-color: $calendars-bg;
+	}
+}
+.datepick-key--unavailable {
+	float: right;
+	&:before {
+		background-color: $calendars-disabled--bg;
+	}
+}

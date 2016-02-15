@@ -1,0 +1,48 @@
+/* HELPER CLASSES
+--------------------------------------------- */
+
+input[type="text"] { border:0; padding:0 5px; }
+
+.left { float:left; width:auto; }
+.right { float:right; width:auto; }
+
+.show { display: block; }
+.hide { display: none; }
+.invisible { visibility: hidden; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+body {
+ }
+img { max-width: 100%; }
+.wrap { position: relative; width: 960px; height: auto; margin: 0 auto; }
+.hidden { display: none !important; visibility: hidden; }
+
+
+a.icon { 
+	background: url('../media/images/sprites-nav.png') no-repeat; 
+	text-indent: -9999px; 
+	&.calendar { 
+		background-position: 0 -68px; 
+		height:10px; 
+		width:12px; 
+	}	
+}
+
+
+
+
+/* Grid Framework
+--------------------------------------------- */
+.canvas { 
+	margin:0 auto; 
+}
+
+.col {
+	margin: 0 15px;
+	overflow: hidden;
+	float: left;
+	display: inline;
+}

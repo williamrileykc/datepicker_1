@@ -1,0 +1,67 @@
+.booking-elements {
+	@extend .clearfix;
+}
+.booking-widget {
+	background-color: $gray-dark;
+	@extend .col;
+	.booking-widget--row {
+		@extend .clearfix;
+		padding:20px 0;
+		input[type="text"] { background-color:transparent; }
+		.booking-widget--datebox {
+			@extend .col;
+			background-color: $white;
+			input[type="text"],
+			label,
+			a { 
+				display:inline-block; 
+				@extend .icon;
+				@extend .calendar;				
+			}
+		}
+	}
+	.booking-widget--tab {
+		@extend .clearfix;
+	}
+
+
+
+	.datepick-multi {
+		width: 544px!important;
+	}
+	.datepick-multi .datepick-month { 
+		border-left:1px solid $gray-dark; 
+		margin-left:20px; 
+		padding-left:19px; 
+	}
+	.datepick-multi .datepick-month.first { 
+		border-left:0px; 
+		margin-left:0; 
+		padding-left:0; 
+	}
+	.datepick-nav { 
+		position: relative; 
+		margin-top: -40px; 
+	}	
+}
+.datepick-cmd { 
+	background: url('../media/images/sprites-nav.png') no-repeat; 
+	display: block; 
+	height:40px; 
+	padding:0; 
+	position:absolute; 
+	text-indent: -9999px; 
+	top:0; 
+	width: 40px; 
+}
+.datepick-cmd-today {
+	display: none;
+}
+.datepick-cmd-prev { 
+	background-position: 0 -138px; 
+	left:0; 
+}
+.datepick-cmd-next { 
+	background-position: 0 -188px; 
+	right:0; 
+}

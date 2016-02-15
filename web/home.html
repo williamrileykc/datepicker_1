@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<title></title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+<!-- <link rel="stylesheet" media="all" href="scripts/jquery.calendars/jquery.calendars.picker.css" /> -->
+<link rel="stylesheet" media="all" href="assets/styles/styles.css" />
+
+<!--[if lt IE 9]>
+  <link href="/styles/styles_ie8orless.css" rel="stylesheet" type="text/css" media="all" />
+<![endif]-->
+
+<meta name="viewport" content="width=1024" />
+<meta charset="utf-8" />
+<title></title>
+
+</head>
+
+<body>
+<div class="dim"></div>  
+<div id="Container" class="liner"> 
+
+  <!-- Booking Widget -->
+    <div class="booking-elements">
+
+
+      <div class="booking-widget">
+        <div class="booking-widget--row" style=""> 
+
+
+          <div id="check-in" class="booking-widget--datebox" data-target="#datepick">
+            <label>Check In</label>
+            <input id="check-in-input" type="text" class="" value="">
+            <a href="#" class="icon calendar"></a>
+          </div>
+          <div id="check-out" class="booking-widget--datebox" data-target="#datepick">
+            <label>Check Out</label>
+            <input id="check-out-input" type="text" class="" value="">
+            <a href="#" class="icon calendar"></a>
+          </div>
+
+
+        </div>
+        <!-- Booking Expanded -->
+        <div class="booking-widget--tab">
+	        <!-- Booking Dates -->
+	        <div id="datepick" class="booking-dates booking-widget--tab">
+	          <div id="checkin-datepicker" class="booking-widget--datepicker"></div>
+	        </div>
+	        <!-- .Booking Dates -->
+        </div>
+        <!-- .Booking Expanded -->
+
+
+      </div>
+    </div>
+  <!-- .Booking Widget --> 
+
+</div>
+<p>A popup datepicker <input type="text" id="popupDatepicker"></p>
+<a href="#" class="testLink">Test 1</a>
+
+
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+<script type="text/javascript" src="assets/scripts/jquery.min.js"></script>
+<script type="text/javascript" src="assets/scripts/modernizr.js"></script>
+
+<!-- <script type="text/javascript" src="scripts/vendor/datepicker/ui.datepick.css"></script> -->
+<script src="assets/scripts/moment.js"></script>
+
+<script src="assets/scripts/jquery.plugin.min.js"></script>
+<script src="assets/scripts/jquery.datepick.min.js"></script>
+
+<script type="text/javascript" src="assets/scripts/scripts.js"></script>
+<!--
+<script type="text/javascript" src="scripts/test.js"></script>
+-->
+</body>
+</html>

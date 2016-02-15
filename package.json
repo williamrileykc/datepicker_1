@@ -1,0 +1,29 @@
+{
+  "name": "MMGY_Boilerplate",
+  "version": "0.2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/mmgyglobal/boilerplate"
+  },
+  "description": "MMGY Global Front-End Boilerplate for dev projects. Gulp automates many web dev tasks such as compiling sass, concatenating and minifying sass and js, linting js, compressing images, etc.",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csscomb": "^3.0.6",
+    "gulp-filesize": "0.0.6",
+    "gulp-htmlhint": "0.3.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^1.4.2",
+    "gulp-util": "^3.0.6",
+    "imagemin-pngquant": "^4.2.0",
+    "run-sequence": "^1.1.4"
+  }
+}

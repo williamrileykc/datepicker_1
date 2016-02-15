@@ -1,0 +1,18 @@
+{
+  "name": "Custom Datepicker",
+  "version": "0.1.0",
+  "homepage": "",
+  "authors": [
+    "Bill Riley"
+  ],
+  "description": "Dependencies for custom datepicker",
+  "dependencies": {
+    "modernizr": "^2.8.3",
+    "jquery": "~1.11.2",
+    "datepicker": "https://github.com/kbwood/datepick.git#~5.0.0",
+    "moment": "~2.10.2"
+  },
+  "private": true,
+  "devDependencies": {
+  }
+}
